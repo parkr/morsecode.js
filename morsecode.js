@@ -55,7 +55,7 @@ var MorseCode = function() {
             } else {
                 return letter;
             }
-        }).join("");
+        }).join(" ").replace(/\s+/g, " ");
     };
 
     this.translateToAlphanumeric = function(to_translate) {
