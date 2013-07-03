@@ -63,4 +63,17 @@ var MorseCode = function() {
     };
 };
 
-module.exports = MorseCode;
+// This exporting of our function is lovingly stolen from Underscore.js.
+// Export the Underscore object for **Node.js**, with
+// backwards-compatibility for the old `require()` API. If we're in
+// the browser, add `MorseCode` as a global object via a string identifier,
+// for Closure Compiler "advanced" mode.
+if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+        exports = module.exports = MorseCode;
+    } else {
+        exports.MorseCode = MorseCode;
+    }
+} else {
+    window.MorseCode = MorseCode;
+}
