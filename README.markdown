@@ -8,8 +8,8 @@ JavaScript.
 ### Node.js
 
 ```js
-var MorseCode  = require("./morsecode");
-var translator = new MorseCode();
+var MorseCode = require("./morsecode");
+var morseConverter = new MorseCode();
 morseConverter.translate("OMG HI");
 // => "_ _ _ _ _ _ _ . . . . . . ."
 ```
@@ -20,7 +20,7 @@ morseConverter.translate("OMG HI");
 
 ```js
 // MorseCode is autoloaded to window.MorseCode
-var translator = new MorseCode();
+var morseConverter = new MorseCode();
 morseConverter.translate("OMG HI");
 // => "_ _ _ _ _ _ _ . . . . . . ."
 ```
