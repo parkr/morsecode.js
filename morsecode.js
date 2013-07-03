@@ -50,7 +50,7 @@ var MorseCode = function() {
         var characters = to_translate.toLowerCase().split("");
         var morseCode  = this.theCode;
         return characters.map(function(letter){
-            if(morseCode.hasOwnProperty(letter)){
+            if(morseCode.hasOwnProperty(letter)) {
                 return morseCode[letter];
             } else {
                 return letter;
