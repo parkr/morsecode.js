@@ -53,15 +53,13 @@
         };
 
         this.translateToMorseCode = function(to_translate) {
-            var characters = to_translate.toLowerCase().split("");
-            var morseCode  = this.theCode;
-            return characters.map(function(letter){
-                if(morseCode.hasOwnProperty(letter)) {
-                    return morseCode[letter];
+            return to_translate.toLowerCase().split("").map(function(letter){
+                if(this.theCode.hasOwnProperty(letter)) {
+                    return this.theCode[letter];
                 } else {
                     return letter;
                 }
-            }).join(" ").replace(/\s+/g, " ");
+            }, this).join(" ").replace(/\s+/g, " ");
         };
 
         this.translateToAlphanumeric = function(to_translate) {
