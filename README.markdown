@@ -25,6 +25,13 @@ morseConverter.translate("OMG HI");
 // => "_ _ _ _ _ _ _ . . . . . . ."
 ```
 
+## Tests
+
+```bash
+$ npm install -g jasmine-node
+$ jasmine-node test
+```
+
 ## License
 
 MIT, do basically whatever you want. By [Parker Moore](http://parkermoore.de).
