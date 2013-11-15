@@ -1,4 +1,4 @@
-// morsecode.js
+// morsecode.js v1.0.0
 // Written with love by Parker Moore, github.com/parkr
 // MIT License
 

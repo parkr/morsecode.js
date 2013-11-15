@@ -1,0 +1,26 @@
+{
+  "name": "morsecode",
+  "version": "1.0.0",
+  "description": "Turn your alphanumeric content into Morse code.",
+  "main": "morsecode.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/parkr/morsecode.js.git"
+  },
+  "keywords": [
+    "morsecode",
+    "morsecode.js",
+    "parkr"
+  ],
+  "author": "Parker Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parkr/morsecode.js/issues"
+  }
+}
