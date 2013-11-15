@@ -1,1 +1,2 @@
 exclude: [Gemfile*]
+baseurl: /morsecode.js
