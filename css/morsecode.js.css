@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background: #f5f9f2;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  font-size: 3em;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.05em;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+code {
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+  color: #333;
+  text-shadow: #aaa 0px 0px 2px;
+  font-size: 0.8em;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.header h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.header > .unit {
+  text-align: center;
+}
+
+.call-to-action > .unit {
+  text-align: center;
+}
+
+.call-to-action, .content {
+  border-top: #eee 0.2em solid;
+}
+
+.content > .unit > div {
+  font-size: 0.7em;
+}
+
+.footer {
+  color: #999;
+  font-size: 0.5em;
+}
+
+a {
+  color: #539623;
+  text-decoration: none;
+  font-weight: bold
+}
+
+a:hover {
+  color: #f5f9f2;
+  background: #539623;
+}
+
+a:visited {
+  color: #539623;
+}
+
+@media (min-width: 960px){
+  h1 {
+    font-size: 2em;
+  }
+  code {
+    padding: 0.5em;
+    background: #e6f4e1;
+  }
+  .header, .call-to-action .content, .footer {
+    margin: 0.5em 1em;
+  }
+  .call-to-action, .content {
+    border: none;
+  }
+}
+
+@media (max-width: 640px){
+
+}

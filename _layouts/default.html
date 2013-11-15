@@ -3,10 +3,48 @@
 <head>
   <meta charset="utf-8">
   <title>Morsecode.js</title>
+  <script src="/js/morsecode.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+  document.onreadystatechange = function(){
+    if(this.readyState === "complete"){
+      var converter = new MorseCode()
+          ,   input = document.getElementById("alphanumeric_input_for_encoding")
+          ,  output = document.getElementById("morse_code_output");
+      var makeitso = function(){
+        if(typeof(input.textContent) !== "undefined"){
+          output.textContent = converter.translate(input.textContent);
+        } else {
+          console.log("Input value:", input.textContent);
+        }
+
+      };
+      input.onkeyup = makeitso;
+      //input.addEventListener("input", makeitso, false);
+      makeitso();
+    }
+  };
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/gridism.css">
   <link rel="stylesheet" href="/css/morsecode.js.css">
 </head>
 <body>
-  {{ content }}
+  <div class="header grid">
+    <h1 class="unit whole">morsecode.js</h1>
+  </div>
+  <div class="call-to-action grid">
+    <div class="unit whole">
+      <code>npm install morsecode</code>
+    </div>
+  </div>
+  <div class="content grid">
+    {{ content }}
+  </div>
+  <div class="footer grid">
+    <div class="unit whole center-on-mobiles">
+      <a href="http://github.com/parkr/morsecode.js">View on Github</a>.<br />
+      Made by <a href="http://github.com/parkr">Parker Moore</a>.<br />
+    </div>
+  </div>
 </body>
 </html>
