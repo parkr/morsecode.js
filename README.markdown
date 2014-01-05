@@ -16,7 +16,7 @@ morseConverter.translate("OMG HI");
 
 ### Browser
 
-(For this one, add the necessary script tag to `morsecode.js`)
+(For this one, add the necessary `<script>` tag to `morsecode.js`)
 
 ```js
 // MorseCode is autoloaded to window.MorseCode
