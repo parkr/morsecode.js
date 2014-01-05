@@ -1,4 +1,15 @@
 #! /bin/bash
 
 script/bootstrap > /dev/null 2>&1
-./node_modules/jasmine-node/bin/jasmine-node test
+
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+    xterm-256color) color_prompt=yes;;
+    screen-256color) color_prompt=yes;;
+esac
+if [ "$color_prompt" = yes ]; then
+    ./node_modules/jasmine-node/bin/jasmine-node test --color
+else
+    ./node_modules/jasmine-node/bin/jasmine-node test --noColor
+fi
+unset color_prompt
