@@ -11,7 +11,7 @@ JavaScript.
 var MorseCode = require("./morsecode");
 var morseConverter = new MorseCode();
 morseConverter.translate("OMG HI");
-// => "_ _ _ _ _ _ _ . . . . . . ."
+// => "_ _ _  _ _  _ _ .   . . . .  . ."
 ```
 
 ### Browser
@@ -22,7 +22,7 @@ morseConverter.translate("OMG HI");
 // MorseCode is autoloaded to window.MorseCode
 var morseConverter = new MorseCode();
 morseConverter.translate("OMG HI");
-// => "_ _ _ _ _ _ _ . . . . . . ."
+// => "_ _ _  _ _  _ _ .   . . . .  . ."
 ```
 
 ## Tests

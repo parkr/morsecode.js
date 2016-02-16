@@ -11,8 +11,8 @@ describe("morsecode.js", function(){
 
         describe("translating to morse code", function() {
 
-            var translationOfNathan = "_ . . _ _ . . . . . _ _ .";
-            var translationOfNathanAngelo = "_ . . _ _ . . . . . _ _ . . _ _ . _ _ . . . _ . . _ _ _";
+            var translationOfNathan = "_ .  . _  _  . . . .  . _  _ .";
+            var translationOfNathanAngelo = "_ .  . _  _  . . . .  . _  _ .   . _  _ .  _ _ .  .  . _ . .  _ _ _";
 
             it("translates lowercase single words properly", function() {
                 expect(
@@ -66,7 +66,7 @@ describe("morsecode.js", function(){
                 var subject = converter.translate("Hello, World");
                 expect(/,/.test(subject)).toBe(true);
                 expect(subject).toBe(
-                  ". . . . . . _ . . . _ . . _ _ _ , . _ _ _ _ _ . _ . . _ . . _ . ."
+                  ". . . .  .  . _ . .  . _ . .  _ _ _  ,   . _ _  _ _ _  . _ .  . _ . .  _ . ."
                 );
             });
 
