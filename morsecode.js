@@ -59,7 +59,7 @@
                 } else {
                     return letter;
                 }
-            }, this).join(" ").replace(/\s+/g, " ");
+            }, this).join("  ").replace(/[ ]{4,}/g, "   ");
         };
 
         this.translateToAlphanumeric = function(to_translate) {
